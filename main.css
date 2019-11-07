@@ -1,0 +1,174 @@
+body {
+  margin: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+.header {
+  background-image: url('img/header-bg.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
+.shadow {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(77, 68, 68, 0.77);
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.nav-list .nav-link {
+  color: #fff;
+  font-size: 16px;
+}
+.header-box-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.img-ant-kids {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.header-text {
+  width: 653px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: normal;
+}
+.header-text .color-letter-blue {
+  color: #00ADEF;
+}
+.header-text .color-letter-yellow {
+  color: #FEDD03;
+}
+.header-text .color-letter-red {
+  color: #E94820;
+}
+.header-text .color-letter-green {
+  color: #66C530;
+}
+.link-next {
+  margin: 40px 0px;
+  position: relative;
+}
+.link-next .img-next {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.link-next::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 5px;
+  left: 0px;
+  border-radius: 50%;
+  animation: pulse 1.5s linear infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(110, 246, 213, 0.0765);
+  }
+}
+.main-mission {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.main-mission .mis-wrapper {
+  display: flex;
+}
+.main-mission .mission-box {
+  width: 50%;
+  position: relative;
+}
+.main-mission .mission-box p {
+  margin: 0px;
+}
+.main-mission .mission-box .mis-title {
+  font-size: 45px;
+  color: #000000;
+}
+.main-mission .mission-box .miss-paragraph-bold {
+  margin-bottom: 45px;
+  font-size: 18px;
+  color: #2B2B2B;
+  line-height: 27px;
+}
+.main-mission .mission-box .img-lines {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.main-mission .mission-box .our-stud {
+  width: 515px;
+}
+.main-mission .mission-box .during {
+  width: 473px;
+}
+.mis-text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #716E6E;
+}
+.mis-text-bold {
+  color: #505050;
+  font-weight: bold;
+}
+.mis-img-box {
+  position: relative;
+  height: 650px;
+}
+.mis-img-box .img-a {
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  z-index: 5;
+}
+.mis-img-box .img-dots {
+  position: absolute;
+  bottom: 55px;
+  right: 90px;
+}
+.mis-box-text {
+  display: flex;
+}
+.mis-box-text .box-teach-parents {
+  width: 50%;
+  position: relative;
+}
+.mis-box-text .box-teach-parents .mis-text-img {
+  position: absolute;
+  right: 40px;
+  width: 488px;
+}
+.mis-box-text .box-teach-parents .img-lines-teach-parents {
+  position: relative;
+  left: 70px;
+}
