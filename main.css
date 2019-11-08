@@ -470,3 +470,61 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+.main-family {
+  margin-top: 80px;
+  display: flex;
+  color: #505050;
+}
+.family-imgs {
+  position: relative;
+  margin-top: 50px;
+}
+.family-imgs .family-dots {
+  position: absolute;
+  bottom: 70px;
+  right: 70px;
+  z-index: -1;
+}
+.family-text {
+  background: url('img/Family.png') left / contain no-repeat;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.family-text .family-title {
+  padding-top: 10px;
+  width: 360px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+}
+.family-text-wrapper {
+  margin-top: -40px;
+  margin-left: 40px;
+}
+.family-text-wrapper .family-par {
+  width: 564px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.family-text-wrapper .family-par-bold {
+  font-weight: 600;
+  color: #131313;
+}
+.family-blocks {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 90px;
+}
+.family-text-box {
+  margin-left: 110px;
+}
+.family-text-box .family-text-title {
+  margin: 26px 0px;
+}
+.family-text-box .family-text-desc {
+  margin-bottom: 50px;
+}
+.family-text-box .family-text-desc-marg {
+  margin-bottom: 20px;
+}
