@@ -43,6 +43,13 @@ a {
   color: #fff;
   font-size: 16px;
 }
+.nav-list .item-contacts {
+  display: flex;
+  align-items: center;
+}
+.nav-list .item-contacts .nav-link-call {
+  margin-left: 10px;
+}
 .header-box-content {
   display: flex;
   align-items: center;
@@ -243,6 +250,10 @@ a {
   font-size: 15px;
   line-height: 25px;
   color: #505050;
+}
+.graduate-blocks {
+  display: flex;
+  justify-content: center;
 }
 .graduate-text-box {
   background: url('img/Graduate.png') center no-repeat;
@@ -677,4 +688,66 @@ a {
 .benefit-img {
   display: flex;
   margin: 0 auto;
+}
+.main-questions {
+  margin-bottom: 123px;
+}
+.questions-text-box {
+  background: url('img/Questions.png') center / contain no-repeat;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.questions-text-box .questions-title {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.questions-school-box {
+  margin: 0 auto;
+  width: 430px;
+  margin-bottom: 65px;
+  border: 1px solid #66C530;
+  border-radius: 52.5px;
+  padding: 8px 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.questions-school-box .questions-school {
+  width: 50%;
+  font-size: 15px;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #585858;
+  border: none;
+  background-color: transparent;
+}
+.questions-school-box .questions-school:first-child {
+  margin-right: 25px;
+}
+.questions-school-box .questions-checked-school {
+  padding: 20px;
+  width: 50%;
+  font-weight: 600;
+  background: #E94820;
+  color: #FFF;
+  border-radius: 52.5px;
+}
+.questions-lists-box {
+  display: flex;
+  justify-content: space-between;
+}
+.questions-lists-box .questions-list {
+  width: 45%;
+}
+.questions-lists-box .questions-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 93px;
+  border-bottom: 1px solid #DBDBDB;
+  color: #000;
+  font-size: 25px;
+  line-height: 25px;
 }
