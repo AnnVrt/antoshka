@@ -185,13 +185,6 @@ a {
   background: url('img/Antoshka.png') center no-repeat;
   text-align: center;
 }
-.training-box-title .training-title-box .main-title {
-  margin: 0px;
-  padding: 60px 0px;
-  font-weight: bold;
-  font-size: 52px;
-  line-height: 60px;
-}
 .training-box-title .training-desc {
   width: 992px;
   font-size: 20px;
@@ -203,6 +196,13 @@ a {
   font-weight: bold;
   font-size: 22px;
   line-height: 50px;
+}
+.main-title {
+  margin: 0px;
+  padding: 60px 0px;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 60px;
 }
 .kids-skills {
   display: flex;
@@ -243,4 +243,230 @@ a {
   font-size: 15px;
   line-height: 25px;
   color: #505050;
+}
+.graduate-text-box {
+  background: url('img/Graduate.png') center no-repeat;
+  text-align: center;
+}
+.graduate-text-box .graduate-title {
+  width: 815px;
+  margin: 0 auto;
+}
+.graduate-circle {
+  margin-bottom: 50px;
+  color: #505050;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.graduate-btns {
+  width: 431px;
+  margin-bottom: 65px;
+  border: 1px solid #C9C9C9;
+  border-radius: 52.5px;
+  padding: 8px 11px;
+}
+.graduate-btns .graduate-btn {
+  font-size: 15px;
+  color: #505050;
+  border: none;
+  background-color: transparent;
+}
+.graduate-btns .graduate-btn:first-child {
+  margin-right: 15px;
+}
+.graduate-btns .checked-btn {
+  width: 227.66px;
+  height: 47px;
+  font-weight: 600;
+  font-size: 15px;
+  background: #00ADEF;
+  border-radius: 52.5px;
+}
+.box-graduate-circle {
+  position: relative;
+  margin-top: 65px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 1px solid #C0C0C0;
+  border-radius: 50%;
+  width: 624.76px;
+  height: 620px;
+}
+.box-graduate-circle .img-circle {
+  border-radius: 50%;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 50%;
+}
+.circle-text {
+  position: absolute;
+  text-align: center;
+}
+.circle-red {
+  background: #E94820;
+}
+.circle-green {
+  background: #66C530;
+}
+.circle-blue {
+  background: #00ADEF;
+}
+.circle-yellow {
+  background: #FEDD03;
+}
+.circle-red::before {
+  animation: pulseCircleRed 1.5s linear infinite;
+}
+.circle-green::before {
+  animation: pulseCircleGreen 1.5s linear infinite;
+}
+.circle-blue::before {
+  animation: pulseCircleBlue 1.5s linear infinite;
+}
+.circle-yellow::before {
+  animation: pulseCircleYellow 1.5s linear infinite;
+}
+@keyframes pulseCircleRed {
+  0% {
+    box-shadow: 0 0 0 0px rgba(233, 72, 32, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(233, 72, 32, 0.1);
+  }
+}
+@keyframes pulseCircleGreen {
+  0% {
+    box-shadow: 0 0 0 0px rgba(102, 197, 48, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(102, 197, 48, 0.1);
+  }
+}
+@keyframes pulseCircleBlue {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 173, 239, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(0, 173, 239, 0.1);
+  }
+}
+@keyframes pulseCircleYellow {
+  0% {
+    box-shadow: 0 0 0 0px rgba(254, 221, 3, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 5px rgba(254, 221, 3, 0.1);
+  }
+}
+.circle-content-first .circle-first-text {
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circle-content-first .circle-first {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circle-sec-left-text {
+  width: 166px;
+  top: 10px;
+  left: -90px;
+}
+.circle-sec-right-text {
+  width: 152px;
+  top: 10px;
+  right: -90px;
+}
+.circle-second-left {
+  position: absolute;
+  top: 62px;
+  left: 113px;
+}
+.circle-second-right {
+  top: 62px;
+  position: absolute;
+  right: 113px;
+}
+.circle-third-left {
+  position: absolute;
+  top: 211px;
+  left: 10px;
+}
+.circle-third-right {
+  position: absolute;
+  top: 211px;
+  right: 10px;
+}
+.circle-third-left-text {
+  width: 214px;
+  top: 150px;
+  left: -210px;
+}
+.circle-third-right-text {
+  width: 190px;
+  top: 150px;
+  right: -200px;
+}
+.circle-four-left {
+  bottom: 180px;
+  left: 20px;
+}
+.circle-four-left-text {
+  left: -190px;
+  bottom: 170px;
+  width: 214px;
+}
+.circle-four-right {
+  bottom: 180px;
+  right: 20px;
+}
+.circle-four-right-text {
+  right: -180px;
+  bottom: 170px;
+  width: 158px;
+}
+.circle-five-left {
+  bottom: 55px;
+  left: 120px;
+}
+.circle-five-left-text {
+  width: 192px;
+  bottom: -10px;
+  left: -100px;
+}
+.circle-five-right {
+  bottom: 55px;
+  right: 120px;
+}
+.circle-five-right-text {
+  bottom: 30px;
+  right: -160px;
+}
+.circle-last {
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.circle-last-text {
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
 }
