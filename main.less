@@ -19,6 +19,9 @@ a {
     position: relative;
     z-index: 10;
 }
+button {
+    outline: none;
+}
 
 // START Header
 .header {
@@ -832,5 +835,113 @@ a {
         color: #000;
         font-size: 25px;
         line-height: 25px;
+    }
+}
+
+.main-connecting {
+    color: #505050;
+}
+.connecting-text-box {
+    background: url('img/Antoshka.png') center/contain no-repeat;
+    text-align: center;
+    .connecting-title {
+        width: 864px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+.connecting-desc {
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.connecting-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    .connecting-col {
+        margin-top: 20px;
+        position: relative;
+        margin-left: 45px;
+        .connecting-dots {
+            position: absolute;
+            right: 20px;
+            z-index: -1;
+            top: 50%;
+        }
+        .connecting-ellipce {
+            position: absolute;
+            right: -50px;
+            bottom: -30px;
+            
+        }
+    }
+    .connecting-form {
+        border: 1px solid #C1C1C1;
+        border-radius: 32px;
+        padding: 45px 73px 55px 73px;
+        background-color: #fff;
+        position: relative;
+        z-index: 10;
+        .form {
+            text-align: center;
+            width: 250px;
+            .form-title {
+                color: #000000;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 20px;
+            }
+            .form-desc {
+                font-size: 16px;
+                line-height: 25px;
+                color: #505050;
+            }
+            .inp {
+                width: 250px;
+                height: 59px;
+                margin-bottom: 18px;
+                border: 1px solid #DBDBDB;
+                border-radius: 29.5px;
+                color: #D2D2D2;
+                font-size: 16px;
+                outline: none;
+                padding-left: 15px;
+                box-sizing: border-box;
+            }
+            .form-btn {
+                color: #FFF;
+                padding: 20px 50px;
+                width: 100%;
+                font-weight: 600;
+                font-size: 16px;
+                background: #00ADEF;
+                border: none;
+                border-radius: 29.5px;
+            }
+        }
+    }
+    .connecting-col-last {
+        margin-top: 50px;
+        position: relative;
+        // .connecting-last-ellipce {
+
+        // }
+        .connecting-last-dots {
+            position: absolute;
+            z-index: -1;
+            top: 120px;
+            left: 76px;
+        }
+        .connecting-last-k {
+            position: relative;
+            top: 70px;
+            left: 75px;
+        }
     }
 }
