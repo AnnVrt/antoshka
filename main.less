@@ -929,9 +929,6 @@ button {
     .connecting-col-last {
         margin-top: 50px;
         position: relative;
-        // .connecting-last-ellipce {
-
-        // }
         .connecting-last-dots {
             position: absolute;
             z-index: -1;
@@ -942,6 +939,123 @@ button {
             position: relative;
             top: 70px;
             left: 75px;
+        }
+    }
+}
+
+.main-contact {
+    margin-top: 150px;
+    color: #505050;
+}
+.contact-wrapper {
+    border: 1px solid #B6B6B6;
+    border-radius: 46px;
+    padding: 50px 55px 50px 45px;
+    box-sizing: border-box;
+}
+.icons-box {
+    display: flex;
+    width: 810px;
+    margin: 0 auto;
+    justify-content: space-between;
+    .icon-box {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .icon-box-location {
+        background: #00ADEF;
+    }
+    .icon-box-message {
+        background: #E94820;
+    }
+    .icon-box-subscribe {
+        background: #66C530;
+    }
+}
+.city-title {
+    .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .contact-street{
+        width: 171px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .message-list {
+        width: 195px;
+        .message-link {
+            font-size: 18px;
+            line-height: 25px;
+            color: #505050;
+        }
+    }
+    .subscribe-list {
+        width: 146px;
+        position: relative;
+        left: -100px;
+        .subscribe-link {
+            display: flex;
+            align-items: center;
+            color: #505050;
+        }
+        .subscribe-desc {
+            margin-left: 15px;
+            font-size: 18px;
+            line-height: 33px;
+        }
+    }
+}
+.contact-row:not(:last-child) {
+    border-bottom: 1px solid #DBDBDB;
+}
+
+
+
+// START Footer
+
+.footer {
+    margin-top: 75px;
+    
+}
+.footer-wrapper {
+    text-align: center;
+    .nav-list {
+        margin-top: 60px;
+        padding-bottom: 60px;
+        justify-content: space-around;
+        border-bottom: 1px solid #DBDBDB;
+        .nav-link {
+            color: #111111;
+            font-size: 18px;
+            line-height: 18px;
+
+        }
+    }
+    .nav-footer {
+        width: 782px;
+        .nav-list-footer {
+            margin-top: 60px;
+            margin-bottom: 50px;
+            
+            display: flex;
+            justify-content: space-between;
+            .nav-link {
+                font-size: 16px;
+                line-height: 16px;
+                color: #828282;
+            }
         }
     }
 }
