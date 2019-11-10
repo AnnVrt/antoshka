@@ -195,8 +195,6 @@ button {
         }
     }
 }
-
-
 .main-training {
     margin-top: 90px;
     text-align: center;
@@ -230,6 +228,7 @@ button {
     font-weight: bold;
     font-size: 52px;
     line-height: 60px;
+    color: #000000;
 }
 .kids-skills {
     display: flex;
@@ -372,7 +371,6 @@ button {
         border-radius: 52.5px;
     }
 }
-
 .graduate-circle {
     .switch-decor {
         border: 1px solid #C9C9C9;
@@ -420,9 +418,7 @@ button {
     bottom: 0px;
     left: 0px;
     border-radius: 50%;
-    
 }
-
 .circle-text {
     position: absolute;
     text-align: center;
@@ -648,8 +644,6 @@ button {
         margin-bottom: 20px;
     }
 }
-
-
 .main-facts {
     margin-top: 30px;
     margin-bottom: 40px;
@@ -665,13 +659,13 @@ button {
         text-align: center;
     }
 }
-
 .wrapper-facts {
     margin-top: 30px;
     height: 905px;
     background: url('img/kids.png') center/cover no-repeat;
     position: relative;
     color: #505050;
+
     .facts-shadow {
         position: absolute;
         top: 0px;
@@ -680,87 +674,80 @@ button {
         left: 0px;
         background: rgba(53, 69, 68, 0.44);
     }
-    .facts-boxes {
-        text-align: center;
-        background-color: #FFF;
-        position: absolute;
-        box-sizing: border-box;
-    }
-    .fact-cont {
-        position: relative;
-        z-index: 200;
-    }
-    .facts-text {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .feeding {
-        top: 225px;
-        left: 67px;
-        max-width: 405px;
-        max-height: 281px;
-        padding: 30px;
-    }
-    .experience {
-        bottom: 0px;
-        right: 140px;
-        width: 338px;
-        height: 338px;
-        padding: 50px;
-    }
-    .network {
-        width: 300px;
-        height: 300px;
-        right: 150px;
-        top: 130px;
-        padding: 040px;
-        transform: rotate(45deg);
-        .network-content {
-            transform: rotate(-45deg);
-        }
-    }
-    .amount {
-        width: 270px;
-        height: 270px;
-        left: 370px;
-        bottom: 85px;
-        padding: 20px;
-        padding-top: 40px;
-        transform: rotate(45deg);
-        .amount-content {
-            transform: rotate(-45deg);
-            position: relative;
-        }
-        .box-16 {
-            position: relative;
-            margin-left: 15px;
-            img:first-child {
-                position: absolute;
-                top: -15px;
-                left: 55px;
-            }
-        }
-    }
+}
+.box-cont {
+    text-align: center;
+    position: relative;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: linear;
+    
+}
+.box-wrap {
+    max-width: 250px;
+    padding: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: linear;
 }
 
-.facts-boxes::before {
+.box-wrap:hover {
+    transform: scale(.4);
+    border-radius: 50%;
+    .box-cont {
+        transform: scale(2.9);
+    }
+}
+.box-wrap::before {
     content: '';
     display: block;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    background-color: #000;
+    background: #fff;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
     border-radius: 50%;
+    z-index: -10;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: linear;
+    
+}
+.box-wrap:hover::before {
+    transform: scale(3.5);
 }
 
-
-
-
-
-
+.box-rot {
+    height: 250px;
+    transform: rotate(45deg);
+    
+    .box-cont {
+        transform: rotate(-45deg);
+    }
+}
+.box-five {
+    top: 225px;
+    left: 67px;
+}
+.box-fifteen {
+    top: 94px;
+    right: 214px;
+}
+.box-sixteen {
+    top: 435px;
+    left: 340px;
+}
+.box-twelve {
+    bottom: 0px;
+    right: 270px;
+}
 .benefits-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -1069,14 +1056,11 @@ button {
 .contact-row:not(:last-child) {
     border-bottom: 1px solid #DBDBDB;
 }
-
-
-
 // START Footer
 
 .footer {
     margin-top: 75px;
-    
+    background: #fff;
 }
 .footer-wrapper {
     text-align: center;
