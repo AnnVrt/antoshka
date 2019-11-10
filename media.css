@@ -1,0 +1,296 @@
+@media all and (max-width: 1250px) {
+  .container {
+    width: 1000px;
+  }
+  .header-text {
+    width: 353px;
+    font-size: 20px;
+  }
+  .mis-img-box {
+    z-index: -1;
+  }
+  .mis-img-box .img-a {
+    left: 0px;
+  }
+  .wrapper-facts .amount {
+    width: 200px;
+    height: 200px;
+    left: 250px;
+  }
+  .wrapper-facts .amount .box-16 {
+    left: 50%;
+    transform: translateX(-30%);
+  }
+  .wrapper-facts .amount .box-16 img:first-child {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+  }
+  .wrapper-facts .amount .facts-text {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .block-after::after {
+    width: 200px;
+    right: -125px;
+  }
+  .connecting-col-last {
+    z-index: -1;
+  }
+  .connecting-col-last .connecting-last-k {
+    left: -80px;
+  }
+}
+@media all and (max-width: 1070px) {
+  .container {
+    width: 800px;
+  }
+  .mission-box {
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mission-box-img {
+    display: none;
+  }
+  .mis-box-text {
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  .mis-box-text .box-teach-parents:first-child {
+    width: 45%;
+    order: 1;
+  }
+  .kids-skills {
+    flex-direction: column;
+    align-items: center;
+  }
+  .kids-skills .skill-box {
+    margin-bottom: 70px;
+  }
+  .kids-skills .skill-img {
+    max-width: 45%;
+  }
+  .box-graduate-circle {
+    width: 424.76px;
+    height: 420px;
+  }
+  .box-graduate-circle .img-circle {
+    width: 220px;
+    height: 220px;
+  }
+  .circle-second-left {
+    top: 30px;
+    left: 90px;
+  }
+  .circle-second-right {
+    top: 30px;
+    right: 90px;
+  }
+  .circle-third-left {
+    top: 150px;
+    left: 2px;
+  }
+  .circle-third-right {
+    top: 150px;
+    right: 2px;
+  }
+  .circle-third-left-text {
+    top: 130px;
+  }
+  .circle-third-right-text {
+    top: 130px;
+  }
+  .circle-four-left {
+    bottom: 150px;
+    left: 2px;
+  }
+  .circle-four-left-text {
+    bottom: 100px;
+  }
+  .circle-four-right {
+    bottom: 150px;
+    right: 2px;
+  }
+  .circle-four-right-text {
+    bottom: 100px;
+  }
+  .circle-five-left {
+    bottom: 30px;
+    left: 90px;
+  }
+  .circle-five-right {
+    bottom: 30px;
+    right: 90px;
+  }
+  .circle-five-right-text {
+    bottom: 10px;
+    right: -190px;
+  }
+  .circle-five-left-text {
+    bottom: -20px;
+    left: -100px;
+  }
+  .main-family {
+    flex-direction: column;
+  }
+  .main-family .family-par {
+    width: 100%;
+  }
+  .main-family .family-imgs {
+    text-align: center;
+  }
+  .main-family .family-blocks {
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+  .block-after::after {
+    display: none;
+  }
+  .connecting-col {
+    left: 100px;
+  }
+  .connecting-col-last {
+    left: -100px;
+  }
+  .icons-box {
+    justify-content: space-around;
+  }
+  .contact-row .subscribe-list {
+    left: -25px;
+  }
+  .contact-row .mail-link {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 890px) {
+  .container {
+    width: 600px;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list li {
+    margin-bottom: 20px;
+  }
+  .skill-img {
+    display: none;
+  }
+  .training-box-title .training-title-box {
+    background-size: contain;
+  }
+  .graduate-text-box {
+    background-size: contain;
+  }
+  .graduate-circle-second {
+    display: block ;
+    text-align: center;
+  }
+  .box-graduate-circle {
+    display: none;
+  }
+  .main-family {
+    margin-top: 120px;
+  }
+  .main-family .family-text-box {
+    margin: 0 auto;
+  }
+  .benefits-boxes {
+    justify-content: center;
+  }
+  .questions-lists-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .questions-lists-box .questions-list {
+    width: 100%;
+  }
+  .connecting-col {
+    display: none;
+  }
+  .connecting-col-last {
+    display: none;
+  }
+  .icons-box {
+    display: none;
+  }
+  .contact-row {
+    flex-direction: column;
+  }
+  .message-list {
+    margin: 20px 0px;
+  }
+  .city-title {
+    text-align: center;
+  }
+  .nav-list-footer {
+    flex-direction: column;
+  }
+  .nav-list-footer .nav-item {
+    margin-bottom: 20px;
+  }
+}
+@media all and (max-width: 620px) {
+  .container {
+    width: 320px;
+  }
+  .main-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .main-mission .mis-box-text {
+    flex-direction: column;
+  }
+  .main-mission .mis-box-text .box-teach-parents {
+    width: 100% ;
+    position: static;
+  }
+  .main-mission .mis-box-text .box-teach-parents .mis-text-img {
+    position: static;
+    width: 100%;
+  }
+  .training-btn-box .training-dots {
+    left: 30%;
+  }
+  .switch-decor {
+    width: 250px;
+  }
+  .woman-img {
+    display: none;
+  }
+  .family-imgs {
+    height: 130px;
+  }
+  .facts-text-box .facts-title {
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+@media all and (max-width: 420px) {
+  .container {
+    width: 320px;
+  }
+  .img-ant-kids {
+    max-width: 300px;
+  }
+  .header-text {
+    width: 253px;
+  }
+  .mission-box {
+    text-align: center;
+  }
+  .mis-box-text {
+    text-align: center;
+  }
+  .mis-box-text .box-teach-parents .img-lines-teach-parents {
+    left: 0px;
+  }
+  .img-circle {
+    max-width: 300px;
+  }
+  .questions-item .questions-link {
+    font-size: 16px;
+  }
+}

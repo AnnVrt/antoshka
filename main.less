@@ -2,6 +2,7 @@
 body {
     margin: 0px;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: #fff;
 }
 ul {
     margin: 0px;
@@ -30,6 +31,7 @@ button {
     background-size: cover;
     position: relative;
     color: #fff;
+    padding-top: 30px;
 }
 .shadow {
     position: absolute;
@@ -39,7 +41,6 @@ button {
     right: 0px;
     background: rgba(77, 68, 68, 0.77);
 }
-
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,7 @@ button {
     flex-direction: column;
 }
 .img-ant-kids {
+    max-width: 100%;
     padding-top: 70px;
     padding-bottom: 80px;
 }
@@ -120,7 +122,6 @@ button {
     margin-top: 50px;
     .mis-wrapper {
         display: flex;
-
     }
     .mission-box {
         width: 50%;
@@ -143,10 +144,10 @@ button {
             margin-bottom: 30px;
         }
         .our-stud {
-            width: 515px;
+            max-width: 515px;
         }
         .during {
-            width: 473px;
+            max-width: 473px;
         }
     }
 }
@@ -159,6 +160,10 @@ button {
     color: #505050;
     font-weight: bold
 }
+.mission-box-img {
+    position: relative;
+}
+
 .mis-img-box {
     position: relative;
     height: 650px;
@@ -182,7 +187,7 @@ button {
         .mis-text-img {
             position: absolute;
             right: 40px;
-            width: 488px;
+            max-width: 488px;
         }
         .img-lines-teach-parents {
             position: relative;
@@ -192,47 +197,9 @@ button {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main-training {
     margin-top: 90px;
+    text-align: center;
 }
 .training-box-title {
     display: flex;
@@ -245,13 +212,13 @@ button {
         
     }
     .training-desc {
-        width: 992px;
+        max-width: 992px;
         font-size: 20px;
         line-height: 28px;
         color: #505050;
     }
     .training-desc-bold {
-        width: 661px;
+        max-width: 661px;
         font-weight: bold;
         font-size: 22px;
         line-height: 50px;
@@ -280,16 +247,16 @@ button {
     display: flex;
     justify-content: space-around;
     .text-discovering {
-        width: 222px;
+        max-width: 222px;
     }
     .text-balance {
-        width: 242px;
+        max-width: 242px;
     }
     .text-act {
-        width: 293px;
+        max-width: 293px;
     }
     .text-connection {
-        width: 293px;
+        max-width: 293px;
     }
     .skill-text {
         text-align: center;
@@ -306,9 +273,60 @@ button {
        
     }
 }
+.training-btn-box {
+    position: relative;
+    margin-top: 70px;
+    .training-btn {
+        padding: 20px 51px 25px 51px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+        background: #00ADEF;
+        border-radius: 51.5px;
+        border: 0px;
+        position: relative;
+        transition-property: all;
+        transition-duration: .6s;
+        transition-timing-function: linear;
+    }
+    .training-dots {
+        position: absolute;
+        left: 50%;
+        top: -50%;
+        z-index: -1;
+    }
+}
+
+.training-btn::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 51.5px;
+    border: 2px solid #00ADEF;
+    transition-property: all;
+    transition-duration: .6s;
+    transition-timing-function: linear;
+}
 
 
+.training-btn:hover {
+    transform: scale(.9, .9);
+}
+.training-btn:hover::before {
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+} 
 
+.main-graduate {
+    margin-top: 120px;
+}
 .graduate-blocks {
     display: flex;
     justify-content: center;
@@ -317,7 +335,7 @@ button {
     background: url('img/Graduate.png') center no-repeat;
     text-align: center;
     .graduate-title {
-        width: 815px;
+        max-width: 815px;
         margin: 0 auto;
     }
 }
@@ -330,28 +348,47 @@ button {
     align-items: center;
     position: relative;
 }
-.graduate-btns {
-    width: 431px;
+
+.switch-decor {
+    margin: 0 auto;
+    width: 430px;
     margin-bottom: 65px;
-    border: 1px solid #C9C9C9;
     border-radius: 52.5px;
-    padding: 8px 11px;
-    .graduate-btn {
-        font-size: 15px;
-        color: #505050;
+    padding: 9px 11px;
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+    .decor-item {
+        width: 50%;
+        line-height: 25px;
         border: none;
         background-color: transparent;
     }
-    .graduate-btn:first-child {
+    .decor-item:first-child {
         margin-right: 15px;
     }
-    .checked-btn {
-        width: 227.66px;
-        height: 47px;
-        font-weight: 600;
-        font-size: 15px;
-        background: #00ADEF;
+    .checked-item {
+        
         border-radius: 52.5px;
+    }
+}
+
+.graduate-circle {
+    .switch-decor {
+        border: 1px solid #C9C9C9;
+        
+        .decor-item {
+            font-size: 15px;
+            color: #505050;
+
+        }
+        .checked-item  {
+            color: #FFF;
+            font-weight: 600;
+            font-size: 15px;
+            background: #00ADEF;
+            padding: 13px 11px;
+        }
     }
 }
 .box-graduate-circle  {
@@ -448,109 +485,111 @@ button {
         box-shadow: 0 0 0 5px rgba(254, 221, 3, 0.1);
     }
 }
-
-.circle-content-first {
-
-    .circle-first-text {
-        top: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .circle-first {
-        position: absolute;
-        top: -5px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-.circle-sec-left-text {
-    width: 166px;
-    top: 10px;
-    left: -90px;
-}
-.circle-sec-right-text {
-    width: 152px;
-    top: 10px;
-    right: -90px;
+    .circle-content-first {
     
-}
-.circle-second-left {
-    position: absolute;
-    top: 62px;
-    left: 113px;
-}
-.circle-second-right {
-    top: 62px;
-    position: absolute;
-    right: 113px;
-}
-.circle-third-left {
-    position: absolute;
-    top: 211px;
-    left: 10px;
-}
-.circle-third-right {
-    position: absolute;
-    top: 211px;
-    right: 10px;
-}
-.circle-third-left-text {
-    width: 214px;
-    top: 150px;
-    left: -210px;
-}
-.circle-third-right-text {
-    width: 190px;
-    top: 150px;
-    right: -200px;
-}
+        .circle-first-text {
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .circle-first {
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .circle-sec-left-text {
+        width: 166px;
+        top: 10px;
+        left: -90px;
+    }
+    .circle-sec-right-text {
+        width: 152px;
+        top: 10px;
+        right: -90px;
+        
+    }
+    .circle-second-left {
+        position: absolute;
+        top: 62px;
+        left: 113px;
+    }
+    .circle-second-right {
+        top: 62px;
+        position: absolute;
+        right: 113px;
+    }
+    .circle-third-left {
+        position: absolute;
+        top: 211px;
+        left: 10px;
+    }
+    .circle-third-right {
+        position: absolute;
+        top: 211px;
+        right: 10px;
+    }
+    .circle-third-left-text {
+        width: 214px;
+        top: 150px;
+        left: -210px;
+    }
+    .circle-third-right-text {
+        width: 190px;
+        top: 150px;
+        right: -200px;
+    }
+    
+    .circle-four-left {
+        bottom: 180px;
+        left: 20px;
+    }
+    .circle-four-left-text {
+        left: -190px;
+        bottom: 170px;
+        width: 214px;
+    }
+    .circle-four-right {
+        bottom: 180px;
+        right: 20px;
+    }
+    .circle-four-right-text {
+        right: -180px;
+        bottom: 170px;
+        width: 158px;
+    } 
+    .circle-five-left {
+        bottom: 55px;
+        left: 120px;
+    }
+    .circle-five-left-text {
+        width: 192px;
+        bottom: -10px;
+        left: -100px;
+    }
+    .circle-five-right {
+        bottom: 55px;
+        right: 120px;
+    }
+    .circle-five-right-text {
+        bottom: 30px;
+        right: -160px;
+    }
+    .circle-last {
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .circle-last-text {
+        bottom: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
-.circle-four-left {
-    bottom: 180px;
-    left: 20px;
-}
-.circle-four-left-text {
-    left: -190px;
-    bottom: 170px;
-    width: 214px;
-}
-.circle-four-right {
-    bottom: 180px;
-    right: 20px;
-}
-.circle-four-right-text {
-    right: -180px;
-    bottom: 170px;
-    width: 158px;
-} 
-.circle-five-left {
-    bottom: 55px;
-    left: 120px;
-}
-.circle-five-left-text {
-    width: 192px;
-    bottom: -10px;
-    left: -100px;
-}
-.circle-five-right {
-    bottom: 55px;
-    right: 120px;
-}
-.circle-five-right-text {
-    bottom: 30px;
-    right: -160px;
-}
-.circle-last {
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.circle-last-text {
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
+    .graduate-circle-second {
+        display: none;
+    }
 .main-family {
     margin-top: 80px;
     display: flex;
@@ -573,7 +612,7 @@ button {
     padding-bottom: 20px;
     .family-title {
         padding-top: 10px;
-        width: 360px;
+        max-width: 360px;
         font-weight: bold;
         font-size: 64px;
         line-height: 64px;
@@ -619,7 +658,7 @@ button {
     background: url('img/Antoshka.png') center/contain no-repeat;
     text-align: center;
     .facts-title {
-        width: 809px;
+        max-width: 809px;
         margin: 0 auto;
         font-size: 65px;
         line-height: 65px;
@@ -647,6 +686,10 @@ button {
         position: absolute;
         box-sizing: border-box;
     }
+    .fact-cont {
+        position: relative;
+        z-index: 200;
+    }
     .facts-text {
         font-weight: 600;
         font-size: 20px;
@@ -655,8 +698,8 @@ button {
     .feeding {
         top: 225px;
         left: 67px;
-        width: 405px;
-        height: 281px;
+        max-width: 405px;
+        max-height: 281px;
         padding: 30px;
     }
     .experience {
@@ -683,12 +726,40 @@ button {
         left: 370px;
         bottom: 85px;
         padding: 20px;
+        padding-top: 40px;
         transform: rotate(45deg);
         .amount-content {
             transform: rotate(-45deg);
+            position: relative;
+        }
+        .box-16 {
+            position: relative;
+            margin-left: 15px;
+            img:first-child {
+                position: absolute;
+                top: -15px;
+                left: 55px;
+            }
         }
     }
 }
+
+.facts-boxes::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+
+
+
+
 
 .benefits-boxes {
     display: flex;
@@ -699,11 +770,11 @@ button {
     background: url('img/Benefits.png') center/contain no-repeat;
     text-align: center;
     .benefits-title {
-        width: 864px;
+        max-width: 864px;
         margin: 0 auto;
         text-align: center;
-        p {
-            margin: 0px;
+        span {
+            display: block;
         }
     }
 }
@@ -770,55 +841,33 @@ button {
 
 .main-questions {
     margin-bottom: 123px;
+    .switch-decor {
+        border: 1px solid #66C530;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .decor-item {
+            font-size: 25px;
+            color: #585858;
+        }
+        .checked-item  {
+            font-weight: 600;
+            background: #E94820;
+            color: #FFF;
+            padding: 8px 11px;
+        }
+    }
 }
 .questions-text-box {
     background: url('img/Questions.png') center/contain no-repeat;
     text-align: center;
     margin-bottom: 50px;
     .questions-title {
-        width: 700px;
+        max-width: 700px;
         margin: 0 auto;
         text-align: center;
     }
 }
-
-.questions-school-box {
-    margin: 0 auto;
-    width: 430px;
-    margin-bottom: 65px;
-    border: 1px solid #66C530;
-    border-radius: 52.5px;
-    padding: 8px 11px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .questions-school {
-        width: 50%;
-        font-size: 15px;
-        font-size: 25px;
-        line-height: 25px;
-        font-weight: 600;
-        color: #585858;
-        border: none;
-        background-color: transparent;
-    }
-    .questions-school:first-child {
-        margin-right: 25px;
-    }
-    .questions-checked-school {
-       padding: 20px;
-        width: 50%;
-        font-weight: 600;
-        
-        background: #E94820;
-        color: #FFF;
-        border-radius: 52.5px;
-    }
-}
-
-
-
-
 
 .questions-lists-box {
     display: flex;
@@ -845,13 +894,13 @@ button {
     background: url('img/Antoshka.png') center/contain no-repeat;
     text-align: center;
     .connecting-title {
-        width: 864px;
+        max-width: 864px;
         margin: 0 auto;
         text-align: center;
     }
 }
 .connecting-desc {
-    width: 620px;
+    max-width: 620px;
     margin: 0 auto;
     text-align: center;
     font-weight: 600;
@@ -863,85 +912,85 @@ button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-
-    .connecting-col {
-        margin-top: 20px;
-        position: relative;
-        margin-left: 45px;
-        .connecting-dots {
-            position: absolute;
-            right: 20px;
-            z-index: -1;
-            top: 50%;
-        }
-        .connecting-ellipce {
-            position: absolute;
-            right: -50px;
-            bottom: -30px;
-            
-        }
+}
+.connecting-col {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 45px;
+    .connecting-dots {
+        position: absolute;
+        right: 20px;
+        z-index: -1;
+        top: 50%;
     }
-    .connecting-form {
-        border: 1px solid #C1C1C1;
-        border-radius: 32px;
-        padding: 45px 73px 55px 73px;
-        background-color: #fff;
-        position: relative;
-        z-index: 10;
-        .form {
-            text-align: center;
+    .connecting-ellipce {
+        position: absolute;
+        right: -50px;
+        bottom: -30px;        
+    }
+}
+.connecting-form {
+    border: 1px solid #C1C1C1;
+    border-radius: 32px;
+    padding: 45px 73px 55px 73px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    .form {
+        text-align: center;
+        width: 250px;
+        .form-title {
+            color: #000000;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 20px;
+        }
+        .form-desc {
+            font-size: 16px;
+            line-height: 25px;
+            color: #505050;
+        }
+        .inp {
             width: 250px;
-            .form-title {
-                color: #000000;
-                font-weight: 600;
-                font-size: 20px;
-                line-height: 20px;
-            }
-            .form-desc {
-                font-size: 16px;
-                line-height: 25px;
-                color: #505050;
-            }
-            .inp {
-                width: 250px;
-                height: 59px;
-                margin-bottom: 18px;
-                border: 1px solid #DBDBDB;
-                border-radius: 29.5px;
-                color: #D2D2D2;
-                font-size: 16px;
-                outline: none;
-                padding-left: 15px;
-                box-sizing: border-box;
-            }
-            .form-btn {
-                color: #FFF;
-                padding: 20px 50px;
-                width: 100%;
-                font-weight: 600;
-                font-size: 16px;
-                background: #00ADEF;
-                border: none;
-                border-radius: 29.5px;
-            }
+            height: 59px;
+            margin-bottom: 18px;
+            border: 1px solid #DBDBDB;
+            border-radius: 29.5px;
+            color: #D2D2D2;
+            background-color: #fff;
+            font-size: 16px;
+            outline: none;
+            padding-left: 15px;
+            box-sizing: border-box;
         }
-    }
-    .connecting-col-last {
-        margin-top: 50px;
-        position: relative;
-        .connecting-last-dots {
-            position: absolute;
-            z-index: -1;
-            top: 120px;
-            left: 76px;
-        }
-        .connecting-last-k {
-            position: relative;
-            top: 70px;
-            left: 75px;
+        .form-btn {
+            color: #FFF;
+            padding: 20px 50px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 16px;
+            background: #00ADEF;
+            border: none;
+            border-radius: 29.5px;
         }
     }
 }
+.connecting-col-last {
+    margin-top: 50px;
+    position: relative;
+    .connecting-last-dots {
+        position: absolute;
+        z-index: -1;
+        top: 120px;
+        left: 76px;
+    }
+    .connecting-last-k {
+        position: relative;
+        top: 70px;
+        left: 75px;
+    }
+}
+
 
 .main-contact {
     margin-top: 150px;
@@ -955,7 +1004,7 @@ button {
 }
 .icons-box {
     display: flex;
-    width: 810px;
+    max-width: 810px;
     margin: 0 auto;
     justify-content: space-between;
     .icon-box {
@@ -989,7 +1038,7 @@ button {
     align-items: center;
     
     .contact-street{
-        width: 171px;
+        max-width: 171px;
         font-size: 16px;
         line-height: 25px;
     }
@@ -1002,7 +1051,7 @@ button {
         }
     }
     .subscribe-list {
-        width: 146px;
+        max-width: 146px;
         position: relative;
         left: -100px;
         .subscribe-link {
@@ -1044,7 +1093,7 @@ button {
         }
     }
     .nav-footer {
-        width: 782px;
+        max-width: 782px;
         .nav-list-footer {
             margin-top: 60px;
             margin-bottom: 50px;
