@@ -1,3 +1,15 @@
+@media all and (min-width: 1250px) {
+  .box-sixteen {
+    top: 530px;
+    left: 370px;
+  }
+  .box-twelve {
+    right: 400px;
+  }
+  .box-five {
+    left: 100px;
+  }
+}
 @media all and (max-width: 1250px) {
   .container {
     width: 1000px;
