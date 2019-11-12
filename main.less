@@ -20,6 +20,9 @@ a {
     position: relative;
     z-index: 10;
 }
+.span-block {
+    display: block;;
+}
 button {
     outline: none;
 }
@@ -116,6 +119,14 @@ button {
 
 
 // START Main
+.main-title {
+    margin: 0px;
+    padding: 60px 0px;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 60px;
+    color: #000000;
+}
 .main-mission {
     display: flex;
     flex-direction: column;
@@ -148,6 +159,14 @@ button {
         }
         .during {
             max-width: 473px;
+        }
+    }
+    .mis-lines-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .img-lines {
+            margin: 0px;
         }
     }
 }
@@ -205,7 +224,7 @@ button {
     align-items: center;
     text-align: center;
     .training-title-box {
-        background: url('img/Antoshka.png') center no-repeat;
+        background: url('img/Antoshka.png') center/contain no-repeat;
         text-align: center;
         
     }
@@ -221,14 +240,6 @@ button {
         font-size: 22px;
         line-height: 50px;
     }
-}
-.main-title {
-    margin: 0px;
-    padding: 60px 0px;
-    font-weight: bold;
-    font-size: 52px;
-    line-height: 60px;
-    color: #000000;
 }
 .kids-skills {
     display: flex;
@@ -760,9 +771,6 @@ button {
         max-width: 864px;
         margin: 0 auto;
         text-align: center;
-        span {
-            display: block;
-        }
     }
 }
 .benefit-box {

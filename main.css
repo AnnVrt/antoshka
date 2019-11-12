@@ -19,6 +19,9 @@ a {
   position: relative;
   z-index: 10;
 }
+.span-block {
+  display: block;
+}
 button {
   outline: none;
 }
@@ -110,6 +113,14 @@ button {
     box-shadow: 0 0 0 20px rgba(110, 246, 213, 0.0765);
   }
 }
+.main-title {
+  margin: 0px;
+  padding: 60px 0px;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}
 .main-mission {
   display: flex;
   flex-direction: column;
@@ -144,6 +155,14 @@ button {
 }
 .main-mission .mission-box .during {
   max-width: 473px;
+}
+.main-mission .mis-lines-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-mission .mis-lines-logo .img-lines {
+  margin: 0px;
 }
 .mis-text {
   font-size: 15px;
@@ -199,7 +218,7 @@ button {
   text-align: center;
 }
 .training-box-title .training-title-box {
-  background: url('img/Antoshka.png') center no-repeat;
+  background: url('img/Antoshka.png') center / contain no-repeat;
   text-align: center;
 }
 .training-box-title .training-desc {
@@ -213,14 +232,6 @@ button {
   font-weight: bold;
   font-size: 22px;
   line-height: 50px;
-}
-.main-title {
-  margin: 0px;
-  padding: 60px 0px;
-  font-weight: bold;
-  font-size: 52px;
-  line-height: 60px;
-  color: #000000;
 }
 .kids-skills {
   display: flex;
@@ -726,9 +737,6 @@ button {
   max-width: 864px;
   margin: 0 auto;
   text-align: center;
-}
-.benefits-text-box .benefits-title span {
-  display: block;
 }
 .benefit-box {
   width: 315px;
