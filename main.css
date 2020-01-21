@@ -22,11 +22,24 @@ a {
 .span-block {
   display: block;
 }
+.nav-select-page {
+  position: relative;
+  padding-bottom: 10px;
+}
+.nav-select-page::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: url('img/lines-min.png') center / contain no-repeat;
+  position: absolute;
+  bottom: 0px;
+}
 button {
   outline: none;
 }
 .header {
-  background-image: url('img/header-bg.png');
+  background-image: url('img/header-bg-min.png');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -218,7 +231,7 @@ button {
   text-align: center;
 }
 .training-box-title .training-title-box {
-  background: url('img/Antoshka.png') center / contain no-repeat;
+  background: url('img/Antoshka-min.png') center / contain no-repeat;
   text-align: center;
 }
 .training-box-title .training-desc {
@@ -328,7 +341,7 @@ button {
   justify-content: center;
 }
 .graduate-text-box {
-  background: url('img/Graduate.png') center no-repeat;
+  background: url('img/Graduate-min.png') center no-repeat;
   text-align: center;
 }
 .graduate-text-box .graduate-title {
@@ -584,7 +597,7 @@ button {
   z-index: -1;
 }
 .family-text {
-  background: url('img/Family.png') left / contain no-repeat;
+  background: url('img/Family-min.png') left / contain no-repeat;
   padding-left: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -631,7 +644,7 @@ button {
   margin-bottom: 40px;
 }
 .facts-text-box {
-  background: url('img/Antoshka.png') center / contain no-repeat;
+  background: url('img/Antoshka-min.png') center / contain no-repeat;
   text-align: center;
 }
 .facts-text-box .facts-title {
@@ -644,7 +657,7 @@ button {
 .wrapper-facts {
   margin-top: 30px;
   height: 905px;
-  background: url('img/kids.png') center / cover no-repeat;
+  background: url('img/kids-min.png') center / cover no-repeat;
   position: relative;
   color: #505050;
 }
@@ -730,7 +743,7 @@ button {
   justify-content: space-between;
 }
 .benefits-text-box {
-  background: url('img/Benefits.png') center / contain no-repeat;
+  background: url('img/Benefits-min.png') center / contain no-repeat;
   text-align: center;
 }
 .benefits-text-box .benefits-title {
@@ -814,7 +827,7 @@ button {
   padding: 8px 11px;
 }
 .questions-text-box {
-  background: url('img/Questions.png') center / contain no-repeat;
+  background: url('img/Questions-min.png') center / contain no-repeat;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -844,7 +857,7 @@ button {
   color: #505050;
 }
 .connecting-text-box {
-  background: url('img/Antoshka.png') center / contain no-repeat;
+  background: url('img/Antoshka-min.png') center / contain no-repeat;
   text-align: center;
 }
 .connecting-text-box .connecting-title {
@@ -1047,4 +1060,69 @@ button {
   font-size: 16px;
   line-height: 16px;
   color: #828282;
+}
+.mail-link-img {
+  width: 26px;
+  height: 26px;
+}
+.remodal_title {
+  margin: 0px;
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 60px;
+  color: #000000;
+}
+.remodal_text {
+  font-size: 14px;
+  line-height: 25px;
+  color: #505050;
+  text-align: left;
+  display: block;
+  margin: auto;
+  max-width: 300px;
+}
+.form_modal_holder {
+  display: flex;
+  justify-content: center;
+}
+.form_modal_holder form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 308px;
+}
+.form_modal_holder form input {
+  height: 40px;
+  padding-left: 15px;
+}
+.hide_link {
+  position: absolute;
+  opacity: 0;
+}
+.send_php_form {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #00ADEF;
+  border-radius: 51.5px;
+  border: 0px;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
+  padding: 0px 25px;
+}
+.remodal {
+  max-width: 400px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+.remodal img {
+  width: 100%;
+}
+.remodal-close {
+  opacity: 0;
 }

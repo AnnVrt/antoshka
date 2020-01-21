@@ -1,0 +1,137 @@
+body {
+  margin: 0px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+}
+.serv-header {
+  position: relative;
+}
+.serv-header .nav-link {
+  color: #2D2D2D;
+}
+.header-box {
+  background: url('../img/serv-header-min.png') center no-repeat;
+  max-width: 1098px;
+  height: 358px;
+  border-radius: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+.header-box .header-serv-shadow {
+  position: absolute;
+  border-radius: 57px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(76, 76, 76, 0.59);
+}
+.serv-header-text {
+  position: relative;
+  z-index: 10;
+}
+.serv-header-text .serv-title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.serv-header-text .serv-list {
+  display: flex;
+  justify-content: center;
+}
+.serv-header-text .serv-list .serv-link {
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.serv-header-text .serv-list .link-serv {
+  margin-left: 5px;
+}
+.link-next {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px;
+}
+.link-next::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 5px;
+  left: 0px;
+  border-radius: 50%;
+  animation: pulse 1.5s linear infinite;
+}
+.serv-main {
+  margin-top: 80px;
+}
+.serv-title-box {
+  text-align: center;
+}
+.main-title-serv {
+  font-size: 65px;
+  line-height: 65px;
+  color: #000000;
+  background: url('../img/Antoshka-min.png') center / contain no-repeat;
+}
+.services-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.serv-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 120px;
+}
+.serv-box .img-box {
+  position: relative;
+}
+.serv-box .img-box .img-dots {
+  position: absolute;
+  bottom: -65px;
+  left: -60px;
+  z-index: -1;
+}
+.serv-box .text-box {
+  max-width: 450px;
+}
+.serv-box .box-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3E3E3E;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.serv-box .box-desc {
+  font-size: 15px;
+  line-height: 20px;
+  color: #303030;
+  margin-bottom: 20px;
+}
+.serv-box-right {
+  justify-content: space-around;
+}
+.serv-box-right .text-box {
+  text-align: right;
+}
+.serv-box-right .box-right-desc {
+  margin: 25px 0px;
+}
+.serv-box-right .box-right-desc .box-desc {
+  margin: 0px;
+}
+.serv-box-right .img-box .img-dots {
+  top: -40px;
+  left: 300px;
+}
